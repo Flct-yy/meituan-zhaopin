@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   height: 78px;
-  border-bottom: 1px solid #f0f0f0;
   background: #fff;
 
   // 左侧logo样式
@@ -45,6 +44,9 @@
         height: 4px;
         border-radius: 2px;
         background: #ffd000;
+        &.active{
+          display: block;
+        }
       }
       &:hover {
         .line{

@@ -1,12 +1,16 @@
 import React from 'react';
 import logo from '@/assets/logo.png'
-import { Link,useNavigate } from 'react-router-dom';
+import { useLocation,Link,useNavigate } from 'react-router-dom';
 import './Navbar.scss';
 
 // 美团招聘导航栏组件
 const Navbar = () => {
   //编程式导航 useNavigate
   const navigate = useNavigate();
+  // 当前路径
+  const location = useLocation();
+  const isVisual = ((location.pathname === '/home')||(location.pathname === '/beidouprogram'))
+
   const menuItems =[
     { path: '/home', name: '首页' },
     { path: '/beidouprogram', name: '北斗计划' },
@@ -17,7 +21,7 @@ const Navbar = () => {
     { path: '/faq', name: '常见问题' }
   ]
   return (
-    <div className="meituan-navbar">
+    <div className="meituan-navbar" style={isVisual ? {backgroundColor: 'transparent'} : undefined}>
       {/* 左侧logo区域 */}
       <div className="navbar-left">
         <div
@@ -42,7 +46,7 @@ const Navbar = () => {
             className='nav-link'
           >
             {item.name}
-            <div className='line'></div>
+            <div className={`line ${location.pathname === item.path ? 'active' : ''}`}></div>
           </Link>
         ))}
       </nav>
