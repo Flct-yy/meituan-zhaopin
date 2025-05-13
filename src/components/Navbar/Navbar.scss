@@ -2,8 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 78px;
-  background: #fff;
+  transition: transform 0.3s ease-in-out,background-color 0.3s;
+
+  // 固定位置
+  z-index: 99;
+  position: fixed;
 
   // 左侧logo样式
   .navbar-left {
@@ -100,6 +105,53 @@
 
       &:hover {
         background: rgb(255, 227, 102);
+      }
+    }
+  }
+
+
+  &.black{
+    background: transparent;
+
+    // 导航菜单样式
+    .navbar-center {
+      .nav-link {
+        color: #fff;
+      }
+    }
+
+    // 右侧按钮样式
+    .navbar-right {
+      .language-btn {
+        border: 1px solid #eee;
+        color: #eee;
+
+        &:hover {
+        color: #FFC300;
+        border-color: #FFC300;
+        }
+      }
+    }
+  }
+  &.white{
+    background: #fff;
+    // 导航菜单样式
+    .navbar-center {
+      .nav-link {
+        color: #000;
+      }
+    }
+
+    // 右侧按钮样式
+    .navbar-right {
+      .language-btn {
+        border: 1px solid rgb(100,100,100);
+        color: rgb(100, 100, 100);
+
+        &:hover {
+          color: rgb(10,10,10);
+          border-color: rgb(10,10,10);
+        }
       }
     }
   }

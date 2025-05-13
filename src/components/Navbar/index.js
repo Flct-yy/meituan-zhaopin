@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from '@/assets/logo.png'
+import logo_Black from '@/assets/logo_Black.png'
+import logo_White from '@/assets/logo_White.svg'
 import { useLocation,Link,useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './Navbar.scss';
 
 // 美团招聘导航栏组件
@@ -10,6 +12,23 @@ const Navbar = () => {
   // 当前路径
   const location = useLocation();
   const isVisual = ((location.pathname === '/home')||(location.pathname === '/beidouprogram'))
+
+  //滑动收缩效果
+  const [prevScrollPos,setPrevScrollPos] = useState(0);
+  const [visible,setVisible] = useState(true);
+  useEffect(()=>{
+    const handleScroll = () =>{
+      const currentScrollPos = window.pageYOffset;
+      const isScrollingDown = currentScrollPos > prevScrollPos && currentScrollPos > 78;
+
+      setVisible(!isScrollingDown);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll',handleScroll);
+    return () => window.removeEventListener('scroll',handleScroll);
+  },[prevScrollPos])
+
 
   const menuItems =[
     { path: '/home', name: '首页' },
@@ -21,7 +40,11 @@ const Navbar = () => {
     { path: '/faq', name: '常见问题' }
   ]
   return (
-    <div className="meituan-navbar" style={isVisual ? {backgroundColor: 'transparent'} : undefined}>
+    <div className={`meituan-navbar ${(isVisual&&prevScrollPos === 0)?'black':'white'}`}
+      style={isVisual ? {
+        transform: visible ? 'translateY(0)' : 'translateY(-100%)'
+      } : undefined}
+    >
       {/* 左侧logo区域 */}
       <div className="navbar-left">
         <div
@@ -29,7 +52,7 @@ const Navbar = () => {
           onClick={() => navigate('/home')}
         >
           <img 
-            src={logo} 
+            src={(isVisual&&prevScrollPos === 0)?logo_White:logo_Black} 
             alt="美团招聘官网logo"
             className='logo-img'
           />
