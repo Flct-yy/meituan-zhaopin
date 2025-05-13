@@ -1,0 +1,104 @@
+.meituan-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+
+  // 左侧logo样式
+  .navbar-left {
+    margin-left: 70px;
+    .logo-wrapper {
+      margin-left: 40px;
+      cursor: pointer;
+      .logo-img {
+        width: 192px;
+        height: 40px;
+      }
+    }
+  }
+
+  // 导航菜单样式
+  .navbar-center {
+    display: flex;
+
+    .nav-link {
+      position: relative;
+      padding: 0px 34px;
+      height: 78px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 78px;
+      color: #000;
+      text-decoration: none;
+
+      .line {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        font-weight: 500;
+        margin: 16px auto 0;
+        width: 24px;
+        height: 4px;
+        border-radius: 2px;
+        background: #ffd000;
+      }
+      &:hover {
+        .line{
+          display: block;
+        }
+      }
+    }
+  }
+
+  // 右侧按钮样式
+  .navbar-right {
+    display: flex;
+
+    .language-btn {
+      margin-right: 12px;
+      width: 80px;
+      height: 36px;
+      padding: 6px 12px;
+      background: transparent;
+      border: 1px solid rgb(100,100,100);
+      border-radius: 4px;
+      color: rgb(100, 100, 100);
+      cursor: pointer;
+      transition: all 0.3s;
+
+      .language-text{
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: rgb(10,10,10);
+        border-color: rgb(10,10,10);
+      }
+    }
+
+    .login-btn {
+      margin-right: 40px;
+      width: 80px;
+      height: 36px;
+      padding: 6px 20px;
+      background: #FFC300;
+      border: none;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      .login-text{
+        color: rgb(10,10,10);
+      }
+
+      &:hover {
+        background: rgb(255, 227, 102);
+      }
+    }
+  }
+}
