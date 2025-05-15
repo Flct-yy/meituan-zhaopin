@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  padding: 0 12px;
+  background-color: rgb(255, 208, 0);
+  color: #000;
+  text-decoration: none; /* 去掉下划线 */
+  width: 180px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(255, 227, 102); /* 悬停时的背景颜色 */
+  }
+}
+
+

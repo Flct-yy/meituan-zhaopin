@@ -19,7 +19,7 @@ const Navbar = () => {
   useEffect(()=>{
     const handleScroll = () =>{
       const currentScrollPos = window.pageYOffset;
-      const isScrollingDown = currentScrollPos > prevScrollPos && currentScrollPos > 78;
+      const isScrollingDown = currentScrollPos > prevScrollPos && currentScrollPos > 0;
 
       setVisible(!isScrollingDown);
       setPrevScrollPos(currentScrollPos);
@@ -40,7 +40,7 @@ const Navbar = () => {
     { path: '/faq', name: '常见问题' }
   ]
   return (
-    <div className={`meituan-navbar ${(isVisual&&prevScrollPos === 0)?'black':'white'}`}
+    <div className={`meituan-navbar ${(isVisual&&prevScrollPos <= 78)?'black':'white'}`}
       style={isVisual ? {
         transform: visible ? 'translateY(0)' : 'translateY(-100%)'
       } : undefined}
@@ -52,7 +52,7 @@ const Navbar = () => {
           onClick={() => navigate('/home')}
         >
           <img 
-            src={(isVisual&&prevScrollPos === 0)?logo_White:logo_Black} 
+            src={(isVisual&&prevScrollPos <= 78)?logo_White:logo_Black} 
             alt="美团招聘官网logo"
             className='logo-img'
           />

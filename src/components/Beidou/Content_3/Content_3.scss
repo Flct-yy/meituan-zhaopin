@@ -1,0 +1,26 @@
+.content_3{
+  background-color: #fff;
+  padding: 1.7rem;
+  border-radius: 1.9rem;
+  .headline{
+    line-height: 22px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 4px 8px 2px;
+    background: #ffe500;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  .item{
+    text-align: left;
+    .title{
+      margin: .95rem 0 .02rem;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .paragraph{
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
