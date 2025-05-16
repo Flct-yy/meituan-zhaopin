@@ -1,0 +1,51 @@
+.person-item{
+  display: flex;
+  background-color: #fff;
+  width: 28.5rem;
+  border-radius: 1.9rem;
+  cursor: pointer;
+  padding: 16px;
+  &:hover{
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);
+  }
+  .pic{
+    overflow: hidden;
+    border-radius: 1.1rem;
+    width: 11.5rem;
+    height: 9.2rem;
+    img{
+      zoom:0.5;
+    }
+  }
+  .content{
+    margin-left: 20px;
+    width: 15.7rem;
+    .content{
+      font-size: 18px;
+      margin: 0;
+      font-weight: 600;
+    }
+    .experience{
+      padding: 0;
+      margin: 0;
+      .experience-li{
+        display: flex;
+        position: relative;
+        .disc{
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: #fc0;
+          top:14px;
+        }
+        p{
+          font-size: 12px;
+          margin: 8px 0 0;
+          line-height: 18px;
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+}

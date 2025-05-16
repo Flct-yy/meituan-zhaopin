@@ -4,9 +4,11 @@ import Tile from '@/components/Beidou/Title'
 import backPic from '@/assets/beidouprogram/image-back.png'
 import Pic_1 from '@/assets/beidouprogram/image-1.svg'
 import './Beidou.scss'
+import logo from '@/assets/logo_Black.png'
 import ContentItem1 from '@/components/Beidou/Content_1'
 import ContentItem2 from '@/components/Beidou/Content_2'
 import ContentItem3 from '@/components/Beidou/Content_3'
+import Person from '@/components/Beidou/Person'
 const Program = () => {
 
   const Content_1 = [
@@ -64,7 +66,29 @@ const Program = () => {
     }
   ]
 
-
+  const PersonArr = [
+    {name:'刘宝旭',experience:[
+      '北京航空航天大学硕士',
+      '无人机团队飞行控制组技术专家',
+      '从校招生起成长为带领团队的技术专家',
+      '从事控制方向的研发落地工作，提升无人机、自动化装备的稳定性、精度和效率'
+    ],pic:'4-1'},
+    {name:'蔡剑成',experience:[
+      '中国科学院大学硕士',
+      '竞赛大神',
+      '负责无人机机载视觉算法研究'
+    ],pic:'4-2'},
+    {name:'石文杰',experience:[
+      '清华大学博士',
+      '学术达人',
+      '负责解决自动车的快速定位问题，让自动车成为了懂得礼让、能灵活绕道的“配送小能手”'
+    ],pic:'4-3'},
+    {name:'李亚蓓',experience:[
+      '中国科学院大学博士',
+      '学术达人',
+      '在职期间攻克基于lidar的3D障碍物检测中的大车检测, 多视角融合等难题'
+    ],pic:'4-4'}
+  ]
 
   return (  
     <div>
@@ -154,12 +178,58 @@ const Program = () => {
             <Button data="更多职位"/>
           </div>
         </section>
+
+        <section className='beidou-person'>
+          <h2>北斗人物</h2>
+          <div className='person-container'>
+            {PersonArr.map((item)=>
+              <Person name={item.name} experience={item.experience} pic={item.pic}/>
+            )}
+          </div>
+        </section>
       </main>
 
       {/* 3. 底部  */}
       <footer class="beidou-footer">
-        <div class="footer-links">...</div>
-        <div class="copyright">...</div>
+        <div className='content'>
+          <div class="logoAndSlogan">
+            <img src={logo} alt='美团招聘'/>
+            <div className='slogan'>
+              <p className="slogan_cn">一起成长，一起更好</p>
+              <p className="slogan_en">Grow Together, Better Together</p>
+            </div>
+          </div>
+          <div class="copyAndFocusUs">
+            <div className='copy'>
+              <div className='copyText'>
+                <span>
+                  <a className='meituanUrl' href='.'>美团</a>
+                </span>
+                <span className='line'>|</span>
+                <span className='meituanCopy'>
+                  @ 2025 xx版权所有&nbsp;&nbsp;
+                </span>
+                <span>
+                  <a className='num-1' href='.'>京ICP备xxxxxxxx号</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a className='num-2' href='.'>京公网安备 xxxxxxxxxxxxxx号</a>
+                </span>
+                <span className='line'>|</span>
+                <span>
+                  <a href='.' className='rule'>隐私政策</a>
+                </span>
+                <span className='contact'>
+                  &nbsp;&nbsp;&nbsp;&nbsp;招聘意见反馈:&nbsp;&nbsp;zhaopin@meituan.com
+                </span>
+              </div>
+            </div>
+            <div className='FocusUsWrap'>
+              <div className='FocusUs'>
+                关注我们
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   )

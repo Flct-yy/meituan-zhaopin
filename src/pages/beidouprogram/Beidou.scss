@@ -143,4 +143,131 @@
     }
   }
 
+  .beidou-person{
+    margin-top: 80px;
+    padding: 80px 0;
+    background: #edece6;
+    h2{
+      text-align: center;
+      color: #000;
+      font-size: 39px;
+      margin: 0;
+      font-weight: 600;
+    }
+    .person-container{
+      width: 61.94rem;
+      margin: 0 auto;
+      margin-top: 2.75rem;
+      display: grid;
+      gap: .94rem;
+      grid-template-columns: repeat(2,30.5rem);
+
+      .person-item:nth-child(1){
+        .pic{
+          img{
+            zoom: 0.383594;
+            object-position: -264px -2px;
+          }
+        }
+        .experience-li:nth-child(3){
+          font-weight: bold;
+        }
+      }
+      .person-item:nth-child(2){
+        .pic{
+          img{
+            zoom: 0.379688;
+            object-position: -112px -6px;
+          }
+        }
+      }
+      .person-item:nth-child(3){
+        .pic{
+          img{
+            zoom: 0.379688;
+            object-position: -560px -100px;
+          }
+        }
+      }
+      .person-item:nth-child(4){
+        .pic{
+          img{
+            zoom: 0.379688;
+            object-position: -190px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.beidou-footer{
+  background-color: #f4f5f7;
+  .content{
+    margin: auto;
+    width: 80rem;
+    .logoAndSlogan{
+      display: flex;
+      justify-content: space-between;
+      padding: 3rem 0 7.125rem;
+      border-bottom: 1px solid #e6e7eb;
+      img{
+        width: 18rem;
+        height: 3.75rem;
+      }
+      .slogan{
+        text-align: right;
+        color: #111925;
+        .slogan_cn{
+          font-size: 36px;
+          line-height: 44px;
+          margin: 0;
+        }
+        .slogan_en{
+          margin: .75rem 0 0;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .copyAndFocusUs{
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .copy{
+
+      .copyText{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        .line{
+          margin: 0 8px;
+          color: #e7e8e9;
+        }
+        .meituanUrl,
+        .meituanCopy,
+        .num-1,
+        .num-2,
+        .rule,
+        .contact{
+          color: #a5a8ae;
+        }
+        a:hover{
+          color: #002a57;
+        }
+      }
+    }
+    .FocusUsWrap{
+
+      .FocusUs{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.84);
+      }
+    }
+  }
 }
