@@ -91,7 +91,7 @@ const Program = () => {
   ]
 
   return (  
-    <div>
+    <div className='beidou'>
       {/* 1. 顶部 */}
       <Navbar/>
 

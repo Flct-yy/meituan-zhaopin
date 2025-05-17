@@ -1,199 +1,200 @@
+.beidou{
+  .beidou-content{
 
-.beidou-content{
+    background-color: #f3f3f4;
+    
+    .background-img{
+      z-index: -1;
+      width: 100%; // 容器宽度为视口宽度
+    }
 
-  background-color: #f3f3f4;
-  
-  .background-img{
-    z-index: -1;
-    width: 100%; // 容器宽度为视口宽度
-  }
+    .beidou-title{
+      position: absolute;
+      color: #fff;
+      top: 250px;
+      margin-left: 245px;
+      align-items: center;
+      .main-title{
 
-  .beidou-title{
-    position: absolute;
-    color: #fff;
-    top: 250px;
-    margin-left: 245px;
-    align-items: center;
-    .main-title{
-
-      .main-title-row{
-        font-size: 36px;
-        img{
-          height: 36px;
+        .main-title-row{
+          font-size: 36px;
+          img{
+            height: 36px;
+          }
         }
       }
-    }
-    .sub-title{
-      font-size: 16px;
-      margin-top: 10px;
-    display: block;
+      .sub-title{
+        font-size: 16px;
+        margin-top: 10px;
+      display: block;
 
+      }
+      .title-button{
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0px;
+      }
     }
-    .title-button{
-      width: 420px;
-      display: flex;
-      justify-content: space-between;
-      margin: 24px 0px;
-    }
-  }
 
-  .beidou-content-item{
-    margin: 0 245px;
-    .beidou-content-row-one{
-      margin-top: 36px;
-      display: grid;
-      grid-template-columns: 2fr repeat(2, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      gap: 20px;
-      height: 368px;
-      width: 100%;
+    .beidou-content-item{
+      margin: 0 245px;
+      .beidou-content-row-one{
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: 2fr repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 20px;
+        height: 368px;
+        width: 100%;
 
-      .content_1:nth-child(1){
-        grid-column: 1/2;
-        grid-row: 1/8;
-        .pic{
-          width: 414px;
-          height: 354px;
-          right: 15px;
-          bottom: 15px;
+        .content_1:nth-child(1){
+          grid-column: 1/2;
+          grid-row: 1/8;
+          .pic{
+            width: 414px;
+            height: 354px;
+            right: 15px;
+            bottom: 15px;
+          }
+        }
+        .content_1:nth-child(2){
+          grid-column: 2/3;
+          grid-row: 1/5;
+          background-color: #ffe600;
+          .pic{
+            width: 6.125rem;
+            height: 6.125rem;
+            right: -1.5rem;
+            bottom: -1rem;
+          }
+        }
+        .content_1:nth-child(3){
+          grid-column: 3/4;
+          grid-row: 1/5;
+          .pic{
+            width: 6.125rem;
+            height: 6.125rem;
+            right: -0.5rem;
+            bottom: -1rem;
+          }
+        }
+        .content_1:nth-child(4){
+          grid-column: 2/4;
+          grid-row: 5/8;
+          .pic{
+            width: 11rem;
+            height: 11rem;
+            right: -2.5rem;
+            bottom: -2.5rem;
+          }
         }
       }
-      .content_1:nth-child(2){
-        grid-column: 2/3;
-        grid-row: 1/5;
-        background-color: #ffe600;
-        .pic{
-          width: 6.125rem;
-          height: 6.125rem;
-          right: -1.5rem;
-          bottom: -1rem;
-        }
-      }
-      .content_1:nth-child(3){
-        grid-column: 3/4;
-        grid-row: 1/5;
-        .pic{
-          width: 6.125rem;
-          height: 6.125rem;
-          right: -0.5rem;
-          bottom: -1rem;
-        }
-      }
-      .content_1:nth-child(4){
-        grid-column: 2/4;
-        grid-row: 5/8;
-        .pic{
-          width: 11rem;
-          height: 11rem;
-          right: -2.5rem;
-          bottom: -2.5rem;
-        }
-      }
-    }
 
-    .beidou-content-title{
-      text-align: center;
-      h5{
-        font-size: 24px;
-        margin:48px 0 10px 0;
-        font-weight: 600;
+      .beidou-content-title{
+        text-align: center;
+        h5{
+          font-size: 24px;
+          margin:48px 0 10px 0;
+          font-weight: 600;
+        }
+        h6{
+          font-size: 14px;
+          margin: 0;
+          font-weight: 300;
+        }
       }
-      h6{
-        font-size: 14px;
-        margin: 0;
-        font-weight: 300;
+      .beidou-content-row-two{
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
       }
-    }
-    .beidou-content-row-two{
-      margin-top: 24px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
 
-    .beidou-content-row-three{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 0.96rem;
-      margin-top: 2.3rem;
-      .beidou-content-row-three-left,
-      .beidou-content-row-three-right{
+      .beidou-content-row-three{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.96rem;
+        margin-top: 2.3rem;
+        .beidou-content-row-three-left,
+        .beidou-content-row-three-right{
+          display: flex;
+          flex-direction: column;
+          gap: .96rem;
+          .content_3:nth-last-child(1){
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0%;
+          }
+        }
+      }
+      .item-foot{
         display: flex;
         flex-direction: column;
-        gap: .96rem;
-        .content_3:nth-last-child(1){
-          flex-grow: 1;
-          flex-shrink: 1;
-          flex-basis: 0%;
+        align-items: center;
+        h6{
+          font-size: 14px;
+          font-weight: 300;
+          margin: 2.2766rem 0 1.1383rem;
+        }
+        a{
+          align-self:center;
         }
       }
     }
-    .item-foot{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h6{
-        font-size: 14px;
-        font-weight: 300;
-        margin: 2.2766rem 0 1.1383rem;
-      }
-      a{
-        align-self:center;
-      }
-    }
-  }
 
-  .beidou-person{
-    margin-top: 80px;
-    padding: 80px 0;
-    background: #edece6;
-    h2{
-      text-align: center;
-      color: #000;
-      font-size: 39px;
-      margin: 0;
-      font-weight: 600;
-    }
-    .person-container{
-      width: 61.94rem;
-      margin: 0 auto;
-      margin-top: 2.75rem;
-      display: grid;
-      gap: .94rem;
-      grid-template-columns: repeat(2,30.5rem);
+    .beidou-person{
+      margin-top: 80px;
+      padding: 80px 0;
+      background: #edece6;
+      h2{
+        text-align: center;
+        color: #000;
+        font-size: 39px;
+        margin: 0;
+        font-weight: 600;
+      }
+      .person-container{
+        width: 61.94rem;
+        margin: 0 auto;
+        margin-top: 2.75rem;
+        display: grid;
+        gap: .94rem;
+        grid-template-columns: repeat(2,30.5rem);
 
-      .person-item:nth-child(1){
-        .pic{
-          img{
-            zoom: 0.383594;
-            object-position: -264px -2px;
+        .person-item:nth-child(1){
+          .pic{
+            img{
+              zoom: 0.383594;
+              object-position: -264px -2px;
+            }
+          }
+          .experience-li:nth-child(3){
+            font-weight: bold;
           }
         }
-        .experience-li:nth-child(3){
-          font-weight: bold;
-        }
-      }
-      .person-item:nth-child(2){
-        .pic{
-          img{
-            zoom: 0.379688;
-            object-position: -112px -6px;
+        .person-item:nth-child(2){
+          .pic{
+            img{
+              zoom: 0.379688;
+              object-position: -112px -6px;
+            }
           }
         }
-      }
-      .person-item:nth-child(3){
-        .pic{
-          img{
-            zoom: 0.379688;
-            object-position: -560px -100px;
+        .person-item:nth-child(3){
+          .pic{
+            img{
+              zoom: 0.379688;
+              object-position: -560px -100px;
+            }
           }
         }
-      }
-      .person-item:nth-child(4){
-        .pic{
-          img{
-            zoom: 0.379688;
-            object-position: -190px 0px;
+        .person-item:nth-child(4){
+          .pic{
+            img{
+              zoom: 0.379688;
+              object-position: -190px 0px;
+            }
           }
         }
       }

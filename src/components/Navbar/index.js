@@ -23,6 +23,7 @@ const Navbar = () => {
 
       setVisible(!isScrollingDown);
       setPrevScrollPos(currentScrollPos);
+
     };
 
     window.addEventListener('scroll',handleScroll);
@@ -42,7 +43,7 @@ const Navbar = () => {
   return (
     <div className={`meituan-navbar ${(isVisual&&prevScrollPos <= 78)?'black':'white'}`}
       style={isVisual ? {
-        transform: visible ? 'translateY(0)' : 'translateY(-100%)'
+        top: visible ? `0` : '-78px'
       } : undefined}
     >
       {/* 左侧logo区域 */}

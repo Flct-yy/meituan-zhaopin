@@ -3,12 +3,17 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  @media screen and (max-width: 1482.4px) {
+    width: 1482.4px;
+  }
   height: 78px;
-  transition: transform 0.3s ease-in-out,background-color 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out,background-color 0.3s ease-in-out;
 
   // 固定位置
   z-index: 99;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  margin-top: -78px;
 
   // 左侧logo样式
   .navbar-left {
