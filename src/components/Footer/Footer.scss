@@ -7,7 +7,7 @@
       display: flex;
       justify-content: space-between;
       padding: 3rem 0 7.125rem;
-      border-bottom: 1px solid #e6e7eb;
+      border-bottom: .0625rem solid #e6e7eb;
       img{
         width: 18rem;
         height: 3.75rem;
@@ -16,21 +16,21 @@
         text-align: right;
         color: #111925;
         .slogan_cn{
-          font-size: 36px;
-          line-height: 44px;
+          font-size: 2.25rem;
+          line-height: 2.75rem;
           margin: 0;
         }
         .slogan_en{
           margin: .75rem 0 0;
           font-weight: 300;
-          font-size: 16px;
-          line-height: 22px;
+          font-size: 1rem;
+          line-height: 1.375rem;
         }
       }
     }
   }
   .copyAndFocusUs{
-    height: 88px;
+    height: 5.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,10 +38,10 @@
 
       .copyText{
         font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: .75rem;
+        line-height: 1.25rem;
         .line{
-          margin: 0 8px;
+          margin: 0 .5rem;
           color: #e7e8e9;
         }
         .meituanUrl,
@@ -61,8 +61,8 @@
 
       .FocusUs{
         font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: .75rem;
+        line-height: 1.25rem;
         color: rgba(0, 0, 0, 0.84);
       }
     }

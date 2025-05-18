@@ -1,15 +1,15 @@
 .button {
   display: inline-block;
-  padding: 0 12px;
+  padding: 0 .75rem;
   background-color: rgb(255, 208, 0);
   color: #000;
   text-decoration: none; /* 去掉下划线 */
-  width: 180px;
-  height: 48px;
-  line-height: 48px;
+  width: 11.25rem;
+  height: 3rem;
+  line-height: 3rem;
   text-align: center;
-  border-radius: 12px;
-  font-size: 16px;
+  border-radius: .75rem;
+  font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s;
   cursor: pointer;

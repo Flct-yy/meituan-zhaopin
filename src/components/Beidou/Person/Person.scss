@@ -4,9 +4,9 @@
   width: 28.5rem;
   border-radius: 1.9rem;
   cursor: pointer;
-  padding: 16px;
+  padding: 1rem;
   &:hover{
-    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 .5rem 1.5rem 0 rgba(0, 0, 0, 0.08);
   }
   .pic{
     overflow: hidden;
@@ -18,10 +18,10 @@
     }
   }
   .content{
-    margin-left: 20px;
+    margin-left: 1.25rem;
     width: 15.7rem;
     .content{
-      font-size: 18px;
+      font-size: 1.125rem;
       margin: 0;
       font-weight: 600;
     }
@@ -33,17 +33,17 @@
         position: relative;
         .disc{
           position: absolute;
-          width: 6px;
-          height: 6px;
+          width: .375rem;
+          height: .375rem;
           border-radius: 50%;
           background-color: #fc0;
           top:14px;
         }
         p{
-          font-size: 12px;
+          font-size: .75rem;
           margin: 8px 0 0;
-          line-height: 18px;
-          margin-left: 14px;
+          line-height: 1.125rem;
+          margin-left: .875rem;
         }
       }
     }

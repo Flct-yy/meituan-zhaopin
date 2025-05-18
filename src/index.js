@@ -6,6 +6,9 @@ import { RouterProvider } from 'react-router-dom';
 import router from './routes'
 // 引入全局样式
 import './styles/global.scss'; 
+import setHtmlFontSize from './utils/rem';
+
+setHtmlFontSize();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

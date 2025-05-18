@@ -11,51 +11,51 @@
     .beidou-title{
       position: absolute;
       color: #fff;
-      top: 250px;
-      margin-left: 245px;
+      top: 15.625rem;
+      margin-left: 15.3125rem;
       align-items: center;
       .main-title{
 
         .main-title-row{
-          font-size: 36px;
+          font-size: 2.25rem;
           img{
-            height: 36px;
+            height: 2.25rem;
           }
         }
       }
       .sub-title{
-        font-size: 16px;
-        margin-top: 10px;
+        font-size: 1rem;
+        margin-top: .625rem;
       display: block;
 
       }
       .title-button{
-        width: 420px;
+        width: 26.25rem;
         display: flex;
         justify-content: space-between;
-        margin: 24px 0px;
+        margin: 1.5rem 0px;
       }
     }
 
     .beidou-content-item{
-      margin: 0 245px;
+      margin: 0 15.3125rem;
       .beidou-content-row-one{
-        margin-top: 36px;
+        margin-top: 2.25rem;
         display: grid;
         grid-template-columns: 2fr repeat(2, 1fr);
         grid-template-rows: repeat(7, 1fr);
-        gap: 20px;
-        height: 368px;
+        gap: 1.25rem;
+        height: 23rem;
         width: 100%;
 
         .content_1:nth-child(1){
           grid-column: 1/2;
           grid-row: 1/8;
           .pic{
-            width: 414px;
-            height: 354px;
-            right: 15px;
-            bottom: 15px;
+            width: 25.875rem;
+            height: 22.125rem;
+            right: .9375rem;
+            bottom: .9375rem;
           }
         }
         .content_1:nth-child(2){
@@ -94,18 +94,18 @@
       .beidou-content-title{
         text-align: center;
         h5{
-          font-size: 24px;
-          margin:48px 0 10px 0;
+          font-size: 1.5rem;
+          margin:3rem 0 .625rem 0;
           font-weight: 600;
         }
         h6{
-          font-size: 14px;
+          font-size: .875rem;
           margin: 0;
           font-weight: 300;
         }
       }
       .beidou-content-row-two{
-        margin-top: 24px;
+        margin-top: 1.5rem;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -133,7 +133,7 @@
         flex-direction: column;
         align-items: center;
         h6{
-          font-size: 14px;
+          font-size: .875rem;
           font-weight: 300;
           margin: 2.2766rem 0 1.1383rem;
         }
@@ -144,13 +144,13 @@
     }
 
     .beidou-person{
-      margin-top: 80px;
-      padding: 80px 0;
+      margin-top: 5rem;
+      padding: 5rem 0;
       background: #edece6;
       h2{
         text-align: center;
         color: #000;
-        font-size: 39px;
+        font-size: 2.4375rem;
         margin: 0;
         font-weight: 600;
       }
