@@ -6,14 +6,14 @@
   @media screen and (max-width: 1482.4px) {
     width: 1482.4px;
   }
-  height: 78px;
+  height: 4.875rem;
   transition: top 0.3s ease-in-out,background-color 0.3s ease-in-out;
 
   // 固定位置
   z-index: 99;
   position: sticky;
   top: 0;
-  margin-top: -78px;
+  margin-top: -4.875rem;
 
   // 左侧logo样式
   .navbar-left {
@@ -22,8 +22,8 @@
       margin-left: 2.5rem;
       cursor: pointer;
       .logo-img {
-        width: 192px;
-        height: 40px;
+        width: 12rem;
+        height: 2.5rem;
       }
     }
   }
@@ -34,11 +34,11 @@
 
     .nav-link {
       position: relative;
-      padding: 0px 34px;
-      height: 78px;
-      font-size: 16px;
+      padding: 0rem 2.125rem;
+      height: 4.875rem;
+      font-size: 1rem;
       font-weight: 600;
-      line-height: 78px;
+      line-height: 4.875rem;
       color: #000;
       text-decoration: none;
 
@@ -49,10 +49,10 @@
         right: 0;
         top: 50%;
         font-weight: 500;
-        margin: 16px auto 0;
-        width: 24px;
-        height: 4px;
-        border-radius: 2px;
+        margin: 1rem auto 0;
+        width: 1.5rem;
+        height: .25rem;
+        border-radius: .125rem;
         background: #ffd000;
         &.active{
           display: block;
@@ -71,19 +71,19 @@
     display: flex;
 
     .language-btn {
-      margin-right: 12px;
-      width: 80px;
-      height: 36px;
-      padding: 6px 12px;
+      margin-right: .75rem;
+      width: 5rem;
+      height: 2.25rem;
+      padding: .375rem .75rem;
       background: transparent;
-      border: 1px solid rgb(100,100,100);
-      border-radius: 4px;
+      border: .0625rem solid rgb(100,100,100);
+      border-radius: .25rem;
       color: rgb(100, 100, 100);
       cursor: pointer;
-      transition: all 0.3s;
+      transition: color 0.3s,borderColor 0.3s;
 
       .language-text{
-        font-size: 14px;
+        font-size: .875rem;
       }
 
       &:hover {
@@ -93,19 +93,20 @@
     }
 
     .login-btn {
-      margin-right: 40px;
-      width: 80px;
-      height: 36px;
-      padding: 6px 20px;
+      margin-right: 2.5rem;
+      width: 5rem;
+      height: 2.25rem;
+      padding: .375rem 1.25rem;
       background: #FFC300;
       border: none;
-      border-radius: 4px;
+      border-radius: .25rem;
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.3s;
+      transition: borderColor 0.3s;
 
       .login-text{
         color: rgb(10,10,10);
+        font-size: .875rem;
       }
 
       &:hover {
@@ -128,7 +129,7 @@
     // 右侧按钮样式
     .navbar-right {
       .language-btn {
-        border: 1px solid #eee;
+        border: .0625rem solid #eee;
         color: #eee;
 
         &:hover {
@@ -150,7 +151,7 @@
     // 右侧按钮样式
     .navbar-right {
       .language-btn {
-        border: 1px solid rgb(100,100,100);
+        border: .0625rem solid rgb(100,100,100);
         color: rgb(100, 100, 100);
 
         &:hover {

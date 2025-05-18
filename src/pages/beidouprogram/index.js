@@ -72,22 +72,22 @@ const Program = () => {
       '无人机团队飞行控制组技术专家',
       '从校招生起成长为带领团队的技术专家',
       '从事控制方向的研发落地工作，提升无人机、自动化装备的稳定性、精度和效率'
-    ],pic:'4-1'},
+    ],pic:'4-1',oldW:'349.84'},
     {name:'蔡剑成',experience:[
       '中国科学院大学硕士',
       '竞赛大神',
       '负责无人机机载视觉算法研究'
-    ],pic:'4-2'},
+    ],pic:'4-2',oldW:'246.26'},
     {name:'石文杰',experience:[
       '清华大学博士',
       '学术达人',
       '负责解决自动车的快速定位问题，让自动车成为了懂得礼让、能灵活绕道的“配送小能手”'
-    ],pic:'4-3'},
+    ],pic:'4-3',oldW:'451.88'},
     {name:'李亚蓓',experience:[
       '中国科学院大学博士',
       '学术达人',
       '在职期间攻克基于lidar的3D障碍物检测中的大车检测, 多视角融合等难题'
-    ],pic:'4-4'}
+    ],pic:'4-4',oldW:'287.7'}
   ]
 
   return (  
@@ -183,7 +183,7 @@ const Program = () => {
           <h2>北斗人物</h2>
           <div className='person-container'>
             {PersonArr.map((item)=>
-              <Person name={item.name} experience={item.experience} pic={item.pic}/>
+              <Person name={item.name} experience={item.experience} pic={item.pic} oldW={item.oldW}/>
             )}
           </div>
         </section>

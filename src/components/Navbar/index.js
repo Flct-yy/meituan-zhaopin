@@ -16,6 +16,8 @@ const Navbar = () => {
   //滑动收缩效果
   const [prevScrollPos,setPrevScrollPos] = useState(0);
   const [visible,setVisible] = useState(true);
+  const height = 4.875*parseFloat(document.documentElement.style.fontSize);
+  
   useEffect(()=>{
     const handleScroll = () =>{
       const currentScrollPos = window.pageYOffset;
@@ -25,7 +27,6 @@ const Navbar = () => {
       setPrevScrollPos(currentScrollPos);
 
     };
-
     window.addEventListener('scroll',handleScroll);
     return () => window.removeEventListener('scroll',handleScroll);
   },[prevScrollPos])
@@ -41,9 +42,9 @@ const Navbar = () => {
     { path: '/faq', name: '常见问题' }
   ]
   return (
-    <div className={`meituan-navbar ${(isVisual&&prevScrollPos <= 78)?'black':'white'}`}
+    <div className={`meituan-navbar ${(isVisual&&prevScrollPos <= height)?'black':'white'}`}
       style={isVisual ? {
-        top: visible ? `0` : '-78px'
+        top: visible ? `0` : '-4.875rem'
       } : undefined}
     >
       {/* 左侧logo区域 */}
@@ -53,7 +54,7 @@ const Navbar = () => {
           onClick={() => navigate('/home')}
         >
           <img 
-            src={(isVisual&&prevScrollPos <= 78)?logo_White:logo_Black} 
+            src={(isVisual&&prevScrollPos <= height)?logo_White:logo_Black} 
             alt="美团招聘官网logo"
             className='logo-img'
           />
