@@ -5,7 +5,7 @@ import Star from '@/assets/beidouprogram/image-xx.svg'
 const Tile = (props) => {
   const starArr = [];
   for (let i = 0; i < props.id; i++) {
-    starArr.push(<img src={Star} alt=""></img>);
+    starArr.push(<img key={i} src={Star} alt=""></img>);
   }
 
 

@@ -96,26 +96,26 @@ const Program = () => {
       <Navbar/>
 
       {/* 2. 主体 */}
-      <main class="beidou-content">
-        <img class="background-img" 
+      <main className="beidou-content">
+        <img className="background-img" 
           alt="美团北斗计划背景图" loading="lazy" 
           src={backPic} 
         />
 
-        <div class="beidou-title">
-          <div class="main-title">
-            <div class='main-title-row'>
+        <div className="beidou-title">
+          <div className="main-title">
+            <div className='main-title-row'>
               北斗计划
               <img src={Pic_1} alt=''></img>
             </div>
-            <div class='main-title-row'>
+            <div className='main-title-row'>
               面向全球招募精尖校园科技人才
             </div>
           </div>
           <div
-            class="sub-title"
+            className="sub-title"
           >期待一起用科技造福亿万用户与商家，让科技走向烟火人间！</div>
-          <div class="title-button">
+          <div className="title-button">
             <Button data={'应届职位'}/>
             <Button data={'实习职位'}/>
           </div>
@@ -125,8 +125,8 @@ const Program = () => {
 
           <div className='beidou-content-row-one'>
             {
-              Content_1.map((item)=>
-                <ContentItem1 title={item.title} content={item.content} src={item.src}/>)
+              Content_1.map((item,index)=>
+                <ContentItem1 key={index} title={item.title} content={item.content} src={item.src}/>)
             }
           </div>
         </section>
@@ -144,8 +144,8 @@ const Program = () => {
           </div>
 
           <div className='beidou-content-row-two'>
-            {Content_2.map((item)=>
-              <ContentItem2 title={item.title} content={item.content} src={item.src}/>
+            {Content_2.map((item,index)=>
+              <ContentItem2 key={index} title={item.title} content={item.content} src={item.src}/>
             )}
           </div>
 
@@ -158,7 +158,7 @@ const Program = () => {
             <div className='beidou-content-row-three-left'>
               {Content_3.map((item,index)=>{
                 if(index%2===0){
-                  return <ContentItem3 headline={item.headline} contentArr={item.contentArr}/>
+                  return <ContentItem3 key={index} headline={item.headline} contentArr={item.contentArr}/>
                 }
                 return undefined;
               })}
@@ -166,7 +166,7 @@ const Program = () => {
             <div className='beidou-content-row-three-right'>
               {Content_3.map((item,index)=>{
                 if(index%2===1){
-                  return <ContentItem3 headline={item.headline} contentArr={item.contentArr}/>
+                  return <ContentItem3 key={index} headline={item.headline} contentArr={item.contentArr}/>
                 }
                 return undefined;
               })}
@@ -182,8 +182,8 @@ const Program = () => {
         <section className='beidou-person'>
           <h2>北斗人物</h2>
           <div className='person-container'>
-            {PersonArr.map((item)=>
-              <Person name={item.name} experience={item.experience} pic={item.pic} oldW={item.oldW}/>
+            {PersonArr.map((item,index)=>
+              <Person key={index} name={item.name} experience={item.experience} pic={item.pic} oldW={item.oldW}/>
             )}
           </div>
         </section>

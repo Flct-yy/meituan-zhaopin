@@ -10,8 +10,8 @@ const ContentItem3 = (props) => {
         {headline}
       </div>
       {
-        contentArr.map((item)=> {return (
-            <div className="item">
+        contentArr.map((item,index)=> {return (
+            <div className="item" key={index}>
               <div className="title">
                 {item.title}
               </div>

@@ -19,16 +19,22 @@ const Person = (props) =>{
     
   },[oldW])
 
+    const handleOnLoad = () => {
+      if (imgRef.current) {
+        setZoom(PictureZoom(imgRef.current.width, oldW));
+      }
+    };
+
   return (
     <div className="person-item">
       <div className="pic">
-        <img src={require(`../../../assets/beidouprogram/${pic}.png`)} style={{zoom:zoom}} ref={imgRef} alt=''/>
+        <img src={require(`../../../assets/beidouprogram/${pic}.png`)} style={{zoom:zoom}} ref={imgRef} alt='' onLoad={handleOnLoad}/>
       </div>
       <div className="content">
         <div className="content">{name}</div>
         <ul className="experience">
-          {experience.map((item)=>
-            <li className="experience-li">
+          {experience.map((item,index)=>
+            <li key={index} className="experience-li">
               <div className="disc"></div>
               <p>{item}</p>
             </li>

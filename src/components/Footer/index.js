@@ -5,16 +5,16 @@ import './Footer.scss'
 const Footer = () => {
 
   return (
-    <footer class="beidou-footer">
+    <footer className="beidou-footer">
       <div className='content'>
-        <div class="logoAndSlogan">
+        <div className="logoAndSlogan">
           <img src={logo} alt='美团招聘'/>
           <div className='slogan'>
             <p className="slogan_cn">一起成长，一起更好</p>
             <p className="slogan_en">Grow Together, Better Together</p>
           </div>
         </div>
-        <div class="copyAndFocusUs">
+        <div className="copyAndFocusUs">
           <div className='copy'>
             <div className='copyText'>
               <span>

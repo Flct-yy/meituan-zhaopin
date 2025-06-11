@@ -77,7 +77,7 @@ const Navbar = () => {
       </nav>
 
       {/* 右侧操作区 */}
-      <div class="navbar-right">
+      <div className="navbar-right">
         <button 
           className='language-btn'
           onClick={()=>navigate('/en')}
