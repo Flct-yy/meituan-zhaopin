@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 美团招聘北斗计划项目
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+这是一个基于React构建的美团招聘北斗计划网站前端项目，用于展示和提供北斗计划相关的招聘信息和申请功能。
 
-## Available Scripts
+## 可用脚本
 
-In the project directory, you can run:
+在项目目录中，您可以运行以下命令：
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+使用craco启动开发服务器。
+在浏览器中打开 [http://localhost:3000](http://localhost:3000) 查看项目。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+当您修改代码时，页面会自动重新加载。
+控制台中会显示任何lint错误。
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+使用craco启动交互式测试运行器。
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+使用craco构建生产版本的应用程序到 `build` 文件夹。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+构建会正确打包React生产版本并优化性能。
+所有文件都会被压缩，文件名会包含哈希值。
+应用程序已经准备好部署！
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 技术栈
 
-### `npm run eject`
+- React 19
+- React Router 7
+- Sass
+- Craco（Create React App Configuration Override）
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 项目结构
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── assets/        # 静态资源文件
+├── components/    # 可复用组件
+├── containers/    # 容器组件
+├── hooks/         # 自定义钩子
+├── pages/         # 页面组件
+├── routes/        # 路由配置
+├── styles/        # 全局样式
+├── utils/         # 工具函数
+└── index.js       # 应用入口
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 安装和启动
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. 确保已安装 Node.js 环境
+2. 安装依赖：`npm install`
+3. 启动开发服务器：`npm start`
 
-## Learn More
+## 关于北斗计划
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+北斗计划是美团面向高校毕业生的人才培养计划，旨在为公司储备和培养未来的技术和管理人才。本网站提供北斗计划的详细介绍、申请指南以及其他相关信息。
