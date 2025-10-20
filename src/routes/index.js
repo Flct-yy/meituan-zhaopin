@@ -10,7 +10,7 @@ import NotFound from '@/pages/404'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to="/home" replace /> // 默认路径重定向到 /home
+    element: <Navigate to="/beidouprogram" replace /> // 默认路径重定向到 /beidouprogram
   },
   {
     path:'/home',
